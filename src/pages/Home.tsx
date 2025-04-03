@@ -49,7 +49,7 @@ export const Home = () => {
           </p>
         </div>
         <div >
-          <Button onClick={() => setOpen(true)}>Crear usuario</Button>
+          <Button onClick={() => setOpen(true)}>Agregar usuario</Button>
           <CreateUserDialog  open={open} onOpenChange={setOpen} />
         </div>
         </div>

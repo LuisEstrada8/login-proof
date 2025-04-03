@@ -30,7 +30,7 @@ export function CreateUserDialog({
       setIsLoading(true)
       postCreateUsers("users", name, job)
         .then(() => {
-            toast.success("Usuario creado correctamente.")
+            toast.success("Se registro cliente correctamente.")
         })
         .catch(() => {
           toast.error("Ha habido un error intentelo mas tarde.")
@@ -55,7 +55,7 @@ export function CreateUserDialog({
             Crear nuevo usuario
           </Dialog.Title>
           <Dialog.Description className="text-sm text-muted-foreground mb-4">
-            Completa el siguiente formulario para registrar un cliente.
+            Completa el siguiente formulario para agregar un cliente.
           </Dialog.Description>
 
           <form onSubmit={handleSubmit} className="space-y-4">
@@ -73,7 +73,7 @@ export function CreateUserDialog({
                 <Button variant="outline" type="button">Cancelar</Button>
               </Dialog.Close>
                 <Button type="submit">
-                {isLoading ? <Spinner className="text-amber-50 p-1" show={isLoading} /> : "Crear"}
+                {isLoading ? <Spinner className="text-amber-50 p-1" show={isLoading} /> : "Agregar"}
                 </Button>
             </div>
           </form>
